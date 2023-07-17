@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAINBOW</title>
+    <h1>DAZZLING RAINBOW--!</h1>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:280px;
+            background-color: rgb(215, 216, 205);
+        }
+        button{
+            cursor: pointer;
+            background-color: rgba(189, 17, 117, 0.864);
+        }
+        
+    </style>
+</head>
+<body>
+    <button><h3>Touch here!</h3></button>
+    <script>
+        const btn=document.querySelector('button');
+        const body=document.querySelector('body');
+        const color=['violet','indigo','blue','green','yellow','orange','red'];
+     document.addEventListener('click',function(){
+        const colorIndex=parseInt(Math.random()*color.length);
+        body.style.backgroundColor=color[colorIndex];
+     });
+    </script>
+</body>
+</html>
